@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #EBE6C9;
+    color: #5A5A5C;
+}
+
+header {
+    background-color: #DE8A60;
+    color: #FFFFFF;
+    #company-logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+}
+
+section {
+    background-color: #EEC4C3;
+    color: #5A5A5C;
+}
+
+/* Add more specific styling for other elements and sections as needed */
+
