@@ -1,51 +1,111 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, p, ul, li {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial Rounded MT Bold', sans-serif;
-    background-color: #EBE6C9;
-    color: #5A5A5C;
-}
-
-header {
-    background-color: #DE8A60;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.logo-container {
+/* Define the background for the top section */
+#home {
+    background-color: #FFAABB; /* Your melting pink color */
+    color: white;
     text-align: center;
+    padding: 2rem;
 }
 
+/* Style the color bar */
+.color-bar {
+    background-color: #DE8A60; /* Orange color */
+    height: 5px;
+}
+
+/* Style the company logo */
 #company-logo {
-    width: 150px; /* Adjust the size as needed */
-    height: auto;
     display: block;
     margin: 0 auto;
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
 }
 
-.header-content {
+/* Style the navigation menu */
+nav {
+    background-color: #EBE6C9; /* Beige color */
     text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 1rem;
 }
 
-nav li {
+nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 1rem;
 }
 
-.header-button {
+nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #5A5A5C; /* Gray color */
+    font-weight: bold;
 }
 
-/* Add more CSS styles as needed */
+nav ul li a:hover {
+    color: pink; /* Change the color to pink on hover */
+}
 
-/* Define styles for other sections and elements */
+/* Style the sections */
+.section-content {
+    padding: 2rem;
+}
+
+.section-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-content p {
+    line-height: 1.6;
+}
+
+/* Style the flavors */
+.flavor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.flavor {
+    text-align: center;
+}
+
+.flavor img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFAABB; /* Pink border around the images */
+}
+
+.flavor p {
+    font-weight: bold;
+}
+
+/* Style the social media icons in the contact section */
+.social-media a {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #DE8A60; /* Orange color */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
