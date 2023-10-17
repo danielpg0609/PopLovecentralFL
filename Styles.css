@@ -41,6 +41,8 @@ nav ul {
 
 nav li {
     margin: 0 15px;
+    position: relative; /* Add relative positioning to the list items */
+
 }
 
 /* Navigation menu styles */
@@ -52,6 +54,11 @@ nav a {
     border-radius: 5px;
     background-color: #EBE6C9;
     transition: background-color 0.3s;
+}
+
+/* Add a background color to the active link */
+nav a.active {
+    background-color: #DE8A60; /* Orange color */
 }
 
 nav a:hover {
