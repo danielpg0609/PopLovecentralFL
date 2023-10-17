@@ -18,6 +18,27 @@ section {
     background-color: #EEC4C3;
     color: #5A5A5C;
 }
+.button-container {
+    background-color: #DE8A60;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-button {
+    color: #FFFFFF;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #EBE6C9;
+    transition: background-color 0.3s;
+}
+
+.header-button:hover {
+    background-color: #EEC4C3;
+}
 
 /* Add more specific styling for other elements and sections as needed */
 
