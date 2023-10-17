@@ -1,12 +1,13 @@
+// JavaScript to enable smooth scrolling
 document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+        const targetSection = document.getElementById(targetId);
 
-        window.scrollTo({
-            top: targetElement.offsetTop,
+        window.scroll({
+            top: targetSection.offsetTop - 60, // Adjust the offset if needed
             behavior: 'smooth'
         });
     });

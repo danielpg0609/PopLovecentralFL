@@ -1,21 +1,72 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and background color for the entire page */
 body {
     font-family: 'Arial Rounded MT Bold', sans-serif;
     background-color: #EBE6C9;
     color: #5A5A5C;
 }
 
-.header-content {
-    text-align: center;
+/* Header styles */
+header {
     background-color: #DE8A60;
     padding: 10px 0;
+}
+
+.header-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #company-logo {
     display: block;
     margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+/* Navigation menu styles */
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #EBE6C9;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #EEC4C3;
+}
+
+/* Section styles */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
     text-align: center;
 }
 
+/* Button container styles */
 .button-container {
     background-color: #DE8A60;
     text-align: center;
@@ -24,9 +75,8 @@ body {
 
 .header-button {
     color: #FFFFFF;
-    font-family: 'Arial Rounded MT Bold', sans-serif;
-    font-size: 18px;
     text-decoration: none;
+    font-size: 18px;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
@@ -37,4 +87,12 @@ body {
 .header-button:hover {
     background-color: #EEC4C3;
 }
+
+/* Flavors menu container styles */
+.menu-container {
+    background-color: #DE8A60;
+    padding: 20px;
+}
+
+/* Add more styles for your website content as needed */
 
