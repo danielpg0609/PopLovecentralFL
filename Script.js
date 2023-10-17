@@ -1,15 +1,22 @@
-// JavaScript to enable smooth scrolling
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        window.scroll({
-            top: targetSection.offsetTop - 60, // Adjust the offset if needed
-            behavior: 'smooth'
+// Example: Add a click event handler for navigation buttons
+document.addEventListener("DOMContentLoaded", function() {
+    const headerButtons = document.querySelectorAll(".header-button");
+    
+    headerButtons.forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const targetId = button.getAttribute("href").substring(1); // Extract the target section ID
+            scrollToSection(targetId); // Custom function to scroll to the target section
         });
     });
 });
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+// You can add more JavaScript functionality as needed
 
