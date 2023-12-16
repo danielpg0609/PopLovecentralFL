@@ -4,28 +4,23 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-.background-image {
-    background-image: url('Fruit.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-body {
-    padding-top: 300px;
-    font-family: 'Arial Rounded MT Bold', sans-serif;
-    background-color: #EEC4C3;
-    color: #5A5A5C;
-}
-
+/* Your existing styles for the header */
 .header {
     position: fixed;
+    height: 120px;
     top: 0;
     left: 0;
     width: 100%;
     background: linear-gradient(135deg, #DE8A60, #EBE6C9, #DE8A60);
     z-index: 1;
-    box-shadow: 0 0 10px rgba(222, 138, 96, 0.7); /* Simulate the orange bar with a shadow effect */
+    box-shadow: 0 0 10px rgba(222, 138, 96, 0.7);
+}
+
+.header-button {
+    text-decoration: none;
+    color: #5A5A5C;
+    font-size: 20px;
+    font-family: 'Arial Rounded MT Bold';
 }
 
 .logo-container {
@@ -37,6 +32,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: 0px;
 }
 
 .header-content {
@@ -54,7 +50,7 @@ nav li {
 
 .header-button {
     text-decoration: none;
-    color: #fff;
+    color: #5A5A5C;
 }
 
 /* Add a hover style for the header buttons */
@@ -62,6 +58,402 @@ nav li {
     color: pink;
 }
 
-/* Define styles for other sections and elements */
-/* You can add section-specific styles below */
+/* New Styles for the Home Section */
+.home-section {
+    position: relative;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    margin: 10px; /* Adjust this margin as needed */
+}
+
+.melting-color-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #EEC4C3, #EBE6C9, #EEC4C3);
+    opacity: 0.6;
+    animation: wave 5s linear infinite;
+    z-index: -1; 
+background-image: url('Images/poplove3colors.png');
+}
+
+@keyframes wave {
+    0% {
+        transform: skewX(20deg);
+    }
+    50% {
+        transform: skewX(-20deg);
+    }
+    100% {
+        transform: skewX(20deg);
+    }
+}
+/* ... (your existing styles) */
+
+
+/* Styles for the text in the home section */
+.text-container {
+position: relative;
+    z-index: 1;
+    padding: 50px;
+    color: #fff;
+    background-image: url('Images/poplove3colors.png'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+text-align: center;
+    color: #5A5A5C;
+    margin-top: 5px;
+    font-family: 'Arial Rounded MT Bold';
+}
+
+.text-container h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+.about-us-section {
+    background-color: #f7f7f7;
+    padding: 1px 0;
+    text-align: center;
+    color: #5A5A5C;
+    font-family: 'Arial Rounded MT Bold';
+    margin-top:1px; /* Adjust the margin-top value */
+}
+
+.about-content img {
+    max-width: 100%;
+    margin:  auto;
+    display: block;
+}
+.about-content {
+    margin-top: 1px; /* Adjust this value to bring the entire section closer to the top */
+}
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 1px;
+    margin-top:10px;
+}
+
+.about-content p {
+   margin-top:1px;
+   font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+.background-image-section h3 {
+    background-image: url('fruit.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0; /* Adjust the padding as needed */
+    font-size:30px;
+    font-family:' Samantha'; 
+
+
+}
+.header-button:hover {
+    color: pink;
+    }
+.image-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.image-content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.image-content p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.section-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section-button:hover {
+    background-color: #5A5A5C;
+    text-decoration: none;
+    color: #5A5A5C;
+    font-size: 20px;
+    font-family: 'Arial Rounded MT Bold';
+    color:pink;
+
+}
+
+/* Style for the "About Us" section */
+.about-us-section h2 {
+    margin-top: 110px;
+}
+
+.about-us-section {
+    background-color: #EBE6C9;
+    padding: 50px 0;
+    text-align: center;
+    color: #5A5A5C;
+    font-family: 'Arial Rounded MT Bold';
+    margin-top:-150px;
+}
+
+.about-content img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-top: 300px;
+    color: #DE8A60;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Add these styles to your existing Styles.css file */
+.events-section {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.events-section {
+    background-image: url('Images/poplove3colors.png'); /* Replace with the URL of your background image */
+    background-size: cover;
+    background-position: center;
+    color: #5A5A5C;
+    text-align: center;
+    padding: 15px 0; /* Adjust the padding as needed */
+    font-family: "Arial Rounded MT Bold";
+}
+
+background-image-section h3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #EBE6C9; /* Change this to the color you want for highlighted text */
+   /* You can also apply other styles such as font-weight, text-decoration, etc. */
+}
+
+.events-content {
+    /* Style for the videos */
+}
+
+.centered-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 320px;
+    flex: 1;
+    width: 320px;
+    height: 240px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+video::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #EBE6C9;
+    border-radius: 5px;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-pause-button {
+    color: #EBE6C9;
+}
+
+video::-webkit-media-controls-volume-slider {
+    background-color: #EBE6C9;
+}
+
+video::-webkit-media-controls-timeline {
+    background-color: #ff6b6b;
+}
+
+h3 {
+    margin-top: 150px;
+}
+/* Style for the "Menu" section */
+.menu-section {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu-item {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-section h2 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 24px;
+    color: #5A5A5C;
+    margin-top:40px;
+    margin-bottom:1px;
+}
+
+.menu-item h3 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 18px;
+    color: #5A5A5C;
+}
+
+
+
+
+/* Contact Us Section Styles */
+.contact-us-section {
+    background-color: #EEC4C3; /* Set your desired background color */
+    padding: 50px 0; /* Adjust the padding as needed */
+    text-align: center;
+    font-family: 'monserrat'; /* Replace with your chosen font family */
+    color:#5A5A5C;
+}
+
+.contact-content {
+    max-width: 800px; /* Adjust the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.contact-content h2 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 50px; /* Adjust the margin at the bottom of the heading */
+}
+
+.contact-content p {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 40px; /* Adjust the margin at the bottom of paragraphs */
+}i
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px; /* Adjust the font size of labels */
+    margin-bottom: 8px; /* Adjust the margin at the bottom of labels */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust the margin at the bottom of form elements */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5A5A5C; /* Set your desired button background color */
+    color: #EBE6C9; /* Set your desired button text color */
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust the font size of the button */
+    font-family:mo
+
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5A5A5C; /* Set your desired button hover color */
+}
+/* Additional style for the Contact Us link */
+.contact-link {
+    color: #EBE6C9; /* Replace #ff0000 with your desired color code */
+}
+
+/* Add clickable images */
+.clickable-image {
+    cursor: pointer;
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+
+
+/* Add more styles as needed */
+.footer {
+    background-color: #5A5A5C;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold";
+    margin-top:40px;
+
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
