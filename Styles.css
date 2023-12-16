@@ -1,9 +1,9 @@
-
 /* Reset some default styles for better consistency */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
+
 .background-image {
     background-image: url('Fruit.png');
     background-size: cover;
@@ -12,16 +12,20 @@ body, h1, h2, p, ul, li {
 }
 
 body {
-    padding-top: 300px; 
+    padding-top: 300px;
     font-family: 'Arial Rounded MT Bold', sans-serif;
     background-color: #EEC4C3;
     color: #5A5A5C;
 }
 
-
-{    background-color: #DE8A60;
-    color: #fff;
-    padding: 10px 0;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #DE8A60, #EBE6C9, #DE8A60);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(222, 138, 96, 0.7); /* Simulate the orange bar with a shadow effect */
 }
 
 .logo-container {
@@ -29,10 +33,10 @@ body {
 }
 
 #company-logo {
-    width: 250px; /* Adjust the size as needed */
+    width: 250px;
     height: auto;
     display: block;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .header-content {
@@ -56,13 +60,8 @@ nav li {
 /* Add a hover style for the header buttons */
 .header-button:hover {
     color: pink;
-}/* Add more CSS styles as needed */
+}
 
 /* Define styles for other sections and elements */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(135deg,#DE8A60,#EBE6C9,#DE8A60); /* Beige background */
-    z-index: 1;
+/* You can add section-specific styles below */
+
